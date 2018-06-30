@@ -1,0 +1,48 @@
+---
+title: compareGroups!
+author: ~
+date: '2018-06-29'
+slug: second post
+categories: []
+tags: []
+---
+
+Second Post 
+
+### compareGroups - An R package for Data Summaries, Data Visualization and Descriptive Statistics!
+
+The compareGroups package can easily create data summaries, extensive reports for exploring data, as well as publication ready univariate or bivariate tables in several formats (plain text, HTML,LaTeX, PDF, Word or Excel. It can display statistics (mean, median, frequencies, incidences, etc.)and  can generate  various graphs like boxplots,barplots, normality-plots etc. for data visulization. It can also perform appropriate tests like t-test, Analysis of variance, Kruskal-Wallis, Fisher, log-rank, ...) depending on the nature of the variable (normal, non-normal or qualitative). It can also summarize genetic data. Reports and Graphs can be generated either by using the methods provided in the package or by a Graphical user Interface provided in the package.
+
+## 2.Description of the Methods
+
+     There are mainly three important methods available in this package
+     
+    *  compareGroups
+    *  createTable
+    *  export2csv/ export2html/ export2latex/ expot2pdf
+    
+     The compareGroups is the main function. When this function is called with the number of variables
+     of a data set against a group variable, it will do all the necessary summary calculaions and stores
+     the results in a compareGroups object. The variables utilized can be of three types ie. continuos
+     normal, continuous non-normal and categorical. In the case of continuous normal variables, it will
+     generate the mean and standard deviations group-wise. In the case of continuous non-normal
+     varriables, it will calculate the median and the first &  third quantiles. For the categorical
+     variables, it will calculate the counts(frequencies) and the pecentages. Based on the nature of the
+     data, the package can auto- matically detect the nature of each of the variables and provides
+     appropriate summaries.
+     
+     Variables can be plotted to see their distributions by using the plot function. Typically, for
+     continuous variables, one can generate histogram, normal q-q plot, box plot and standard deviation
+     from normality plots.
+     
+     The createTable method, when called with the compareTable object as the argument, will generate the
+     tables with the summaries that can be exported to csv, html, latex or pdf.
+     
+     By using the export methods - export2csv, export2html, export2latex and export2pdf, one can export
+     these summary tables to the respective formats for later use.
+     
+      
+```{r}
+df<-iris
+head(df)
+```

@@ -1,0 +1,10 @@
+---
+title: compareGroups
+author: Krishna
+date: '2018-06-29'
+slug: comparegroups
+categories: []
+tags: []
+---
+
+compareGroups - An R package for Data Summaries, Data Visualization and Descriptive Statistics

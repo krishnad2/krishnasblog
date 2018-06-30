@@ -1,0 +1,16 @@
+---
+title: Hello World!
+author: ~
+date: '2018-06-28'
+slug: first post
+categories: []
+tags: []
+---
+
+First POst !
+
+```{r}
+x<-1:5
+y<-1:5
+plot(x,y)
+```
